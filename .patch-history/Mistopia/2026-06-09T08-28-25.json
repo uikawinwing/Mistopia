@@ -1,0 +1,516 @@
+{
+  "projectName": "Mistopia",
+  "worldbookName": "Mistopia",
+  "form": "charactercard",
+  "mvu": false,
+  "entryManifest": {
+    "世界观": {
+      "世界主设定": {
+        "keywords": [
+          "雾冕诸邦",
+          "卡美洛中枢",
+          "霧素",
+          "魔素矿",
+          "大消隐"
+        ],
+        "abstract": "雾冕诸邦的根设定：霧素、魔素矿、大消隐、魔导科技、现代人退化与明亮乌托邦主题。",
+        "contents": [
+          {
+            "content": "<世界主设定>"
+          },
+          {
+            "file": "世界书/世界观/世界主设定.yaml"
+          },
+          {
+            "content": "</世界主设定>"
+          }
+        ],
+        "uid": 10,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 10
+        }
+      },
+      "世界规则": {
+        "keywords": [
+          "世界规则",
+          "沙盒规则",
+          "霧病",
+          "魔法机器",
+          "原生施法",
+          "霧烟斗",
+          "咒语"
+        ],
+        "abstract": "雾冕诸邦的沙盒裁决规则：行动尝试、机械施法限制、原生施法限制、霧素危害、社会后果、隐藏真相与乌托邦冲突。",
+        "contents": [
+          {
+            "content": "<世界规则>"
+          },
+          {
+            "file": "世界书/世界观/世界规则.yaml"
+          },
+          {
+            "content": "</世界规则>"
+          }
+        ],
+        "uid": 11,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 11
+        }
+      }
+    },
+    "扮演准则": {
+      "沙盒扮演规则": {
+        "rephrase": true,
+        "keywords": [],
+        "abstract": "AIRP 沙盒主持规则：模型扮演世界、NPC、组织与后果，不替 <user> 决定行动或身份。",
+        "contents": [
+          {
+            "content": "<扮演准则>"
+          },
+          {
+            "file": "世界书/扮演准则/沙盒扮演规则.yaml"
+          },
+          {
+            "content": "</扮演准则>"
+          }
+        ],
+        "uid": 12,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 80
+        }
+      }
+    },
+    "地理": {
+      "晨钟城": {
+        "scope": "specific",
+        "part": "settlement",
+        "keywords": [
+          "晨钟城",
+          "晨钟学院",
+          "低钟区",
+          "白铃教堂"
+        ],
+        "abstract": "晨钟城是加雷斯守护的教育与资格开放城市，提供学院、考试、低钟区、教会审查和魔导事故等沙盒入口。",
+        "contents": [
+          {
+            "content": "<城镇>"
+          },
+          {
+            "file": "世界书/地理/晨钟城.yaml"
+          },
+          {
+            "content": "</城镇>"
+          }
+        ],
+        "uid": 13,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 20
+        }
+      },
+      "圆桌诸城": {
+        "scope": "specific",
+        "part": "settlement",
+        "keywords": [
+          "圆桌诸城",
+          "席位城市",
+          "城市守护者",
+          "主城"
+        ],
+        "abstract": "圆桌诸城的城市制度、基础设施、席位骑士治理结构和可游玩城市模板。",
+        "contents": [
+          {
+            "content": "<城镇>"
+          },
+          {
+            "file": "世界书/地理/圆桌诸城.yaml"
+          },
+          {
+            "content": "</城镇>"
+          }
+        ],
+        "uid": 14,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 30
+        }
+      }
+    },
+    "势力": {
+      "圆桌诸席": {
+        "scope": "specific",
+        "part": "guild",
+        "keywords": [
+          "圆桌诸席",
+          "圆桌骑士",
+          "席位骑士",
+          "誓约武装",
+          "天钥晶"
+        ],
+        "abstract": "圆桌诸席是城市联盟的最高守护体系，每位席位骑士代表一种城市理想；誓约武装以不可复制的天钥晶为核心。",
+        "contents": [
+          {
+            "content": "<势力>"
+          },
+          {
+            "file": "世界书/势力/圆桌诸席.yaml"
+          },
+          {
+            "content": "</势力>"
+          }
+        ],
+        "uid": 15,
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 40
+        }
+      }
+    },
+    "组织": {
+      "旧雾复归派": {
+        "scope": "specific",
+        "keywords": [
+          "旧雾复归派",
+          "复归派",
+          "原生施法者",
+          "古代血脉"
+        ],
+        "abstract": "旧雾复归派主张高魔力生态回归，掌握古代魔法与高霧区知识，但内部有温和与激进分歧。",
+        "contents": [
+          {
+            "content": "<组织>"
+          },
+          {
+            "file": "世界书/组织/旧雾复归派.yaml"
+          },
+          {
+            "content": "</组织>"
+          }
+        ],
+        "uid": 16,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "旧雾复归派",
+            "复归派",
+            "原生施法者",
+            "古代血脉"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 50
+        }
+      },
+      "进化炉学派": {
+        "scope": "specific",
+        "keywords": [
+          "进化炉学派",
+          "进化炉",
+          "魔素适应",
+          "加速进化"
+        ],
+        "abstract": "进化炉学派主张用魔导科学加速人类耐魔适应，提供抗霧技术，也带来人体实验风险。",
+        "contents": [
+          {
+            "content": "<组织>"
+          },
+          {
+            "file": "世界书/组织/进化炉学派.yaml"
+          },
+          {
+            "content": "</组织>"
+          }
+        ],
+        "uid": 17,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "进化炉学派",
+            "进化炉",
+            "魔素适应",
+            "加速进化"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 51
+        }
+      }
+    },
+    "怪物生态": {
+      "雾化生物": {
+        "scope": "specific",
+        "keywords": [
+          "雾化生物",
+          "霧区怪物",
+          "魔法生物",
+          "高霧区"
+        ],
+        "abstract": "雾化生物包含回归种、污染种、机械共生种与圣遗残响种，用于高霧区遭遇、生态冲突与调查任务。",
+        "contents": [
+          {
+            "content": "<怪物生态>"
+          },
+          {
+            "file": "世界书/怪物生态/雾化生物.yaml"
+          },
+          {
+            "content": "</怪物生态>"
+          }
+        ],
+        "uid": 18,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "雾化生物",
+            "霧区怪物",
+            "魔法生物",
+            "高霧区"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 60
+        }
+      }
+    },
+    "时间线": {},
+    "产业": {},
+    "种族": {},
+    "角色": {},
+    "NPC": {
+      "加雷斯": {
+        "scope": "specific",
+        "keywords": [
+          "加雷斯",
+          "教育席",
+          "晨钟城席位骑士",
+          "启明钟枪"
+        ],
+        "abstract": "加雷斯是晨钟城的圆桌教育席位骑士，代表教育、成长与资格开放，也承担知识扩散带来的制度风险。",
+        "contents": [
+          {
+            "content": "<NPC>"
+          },
+          {
+            "file": "世界书/NPC/加雷斯.yaml"
+          },
+          {
+            "content": "</NPC>"
+          }
+        ],
+        "uid": 19,
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "加雷斯",
+            "教育席",
+            "晨钟城席位骑士",
+            "启明钟枪"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 70
+        }
+      }
+    },
+    "事件": {},
+    "MVU": {},
+    "EJS预处理": {}
+  },
+  "typeLists": {
+    "before_char": [
+      "EJS预处理",
+      "世界观",
+      "扮演准则",
+      "时间线",
+      "地理",
+      "势力",
+      "产业",
+      "组织",
+      "种族",
+      "怪物生态"
+    ],
+    "after_char": [
+      "角色",
+      "NPC"
+    ],
+    "depth": [
+      "事件",
+      "MVU"
+    ]
+  },
+  "strategyThresholds": {
+    "角色": {
+      "basic": {
+        "threshold": 5,
+        "required": true
+      },
+      "other": {
+        "threshold": 2,
+        "required": false
+      },
+      "personality": {
+        "threshold": 2,
+        "required": true
+      },
+      "tri_faceted": {
+        "threshold": 2,
+        "required": false
+      }
+    },
+    "事件": 0,
+    "地理": {
+      "region": {
+        "threshold": 4,
+        "required": false
+      },
+      "settlement": {
+        "threshold": 4,
+        "required": false
+      },
+      "adventure": {
+        "threshold": 4,
+        "required": false
+      },
+      "scene": {
+        "threshold": 4,
+        "required": false
+      }
+    },
+    "势力": {
+      "state": {
+        "threshold": 4,
+        "required": false
+      },
+      "guild": {
+        "threshold": 4,
+        "required": false
+      },
+      "religion": {
+        "threshold": 4,
+        "required": false
+      },
+      "secret": {
+        "threshold": 4,
+        "required": false
+      },
+      "tribe": {
+        "threshold": 4,
+        "required": false
+      }
+    },
+    "产业": 0,
+    "组织": 0,
+    "种族": 0,
+    "怪物生态": 0,
+    "MVU": {
+      "initvar": {
+        "threshold": null,
+        "required": false
+      },
+      "output_format": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "update_rules": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "variable_list": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "NPC": 0,
+    "EJS预处理": "Infinity",
+    "扮演准则": "Infinity",
+    "时间线": {
+      "history": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "plot": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "世界观": "Infinity"
+  },
+  "partOrder": {
+    "角色": [
+      "basic",
+      "personality",
+      "tri_faceted",
+      "other"
+    ],
+    "地理": [
+      "region",
+      "settlement",
+      "adventure",
+      "scene"
+    ],
+    "势力": [
+      "state",
+      "guild",
+      "religion",
+      "secret",
+      "tribe"
+    ],
+    "MVU": [
+      "variable_list",
+      "update_rules",
+      "output_format",
+      "initvar"
+    ],
+    "时间线": [
+      "history",
+      "plot"
+    ]
+  },
+  "depth_defaults": {
+    "role": "system",
+    "depth": 0
+  },
+  "description": "Mistopia 是一个剑与魔法科技并存的蒸汽幻想 AIRP 大世界沙盒角色卡。世界内部名为雾冕诸邦，普通人依靠魔导机械使用法术，圆桌诸席守护不同城市理想，而霧素回升正在让古代魔法、生物、信仰与人类进化议题重新进入现代文明。",
+  "first_messages": [
+    "开场白/0.txt"
+  ],
+  "creator": "",
+  "creator_notes": "Mistopia 是角色卡名；世界书正文使用雾冕诸邦作为世界内部名称。正式源文件位于 cards/Mistopia/世界书/。",
+  "version": "1.0",
+  "create_date": "2026-06-08T17:15:44.520Z"
+}

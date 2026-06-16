@@ -1,0 +1,142 @@
+{
+  "projects": {
+    "Mistopia": {
+      "state_file": "cards/Mistopia/tavern-cards-state.json",
+      "artifact": "cards/Mistopia/Mistopia.json"
+    }
+  },
+  "default_part_order": {
+    "角色": [
+      "basic",
+      "personality",
+      "tri_faceted",
+      "other"
+    ],
+    "势力": [
+      "state",
+      "guild",
+      "religion",
+      "secret",
+      "tribe",
+      "settlement"
+    ],
+    "MVU": [
+      "variable_list",
+      "update_rules",
+      "output_format",
+      "initvar"
+    ],
+    "时间线": [
+      "history",
+      "plot"
+    ]
+  },
+  "default_strategy_thresholds": {
+    "角色": {
+      "basic": {
+        "required": true,
+        "threshold": 5
+      },
+      "other": {
+        "required": false,
+        "threshold": 2
+      },
+      "personality": {
+        "required": true,
+        "threshold": 2
+      },
+      "tri_faceted": {
+        "required": false,
+        "threshold": 2
+      }
+    },
+    "事件": 0,
+    "势力": {
+      "state": {
+        "required": false,
+        "threshold": 4
+      },
+      "guild": {
+        "required": false,
+        "threshold": 4
+      },
+      "religion": {
+        "required": false,
+        "threshold": 4
+      },
+      "secret": {
+        "required": false,
+        "threshold": 4
+      },
+      "tribe": {
+        "required": false,
+        "threshold": 4
+      },
+      "settlement": {
+        "required": false,
+        "threshold": 4
+      }
+    },
+    "产业": 0,
+    "组织": 0,
+    "种族": 0,
+    "怪物生态": 0,
+    "MVU": {
+      "initvar": {
+        "required": false,
+        "threshold": null
+      },
+      "output_format": {
+        "required": false,
+        "threshold": "Infinity"
+      },
+      "update_rules": {
+        "required": false,
+        "threshold": "Infinity"
+      },
+      "variable_list": {
+        "required": false,
+        "threshold": "Infinity"
+      }
+    },
+    "NPC": 0,
+    "EJS预处理": "Infinity",
+    "扮演准则": "Infinity",
+    "时间线": {
+      "history": {
+        "required": false,
+        "threshold": "Infinity"
+      },
+      "plot": {
+        "required": false,
+        "threshold": "Infinity"
+      }
+    },
+    "世界观": "Infinity"
+  },
+  "default_type_lists": {
+    "before_char": [
+      "EJS预处理",
+      "世界观",
+      "扮演准则",
+      "时间线",
+      "势力",
+      "产业",
+      "组织",
+      "种族",
+      "怪物生态"
+    ],
+    "after_char": [
+      "角色",
+      "NPC"
+    ],
+    "depth": [
+      "事件",
+      "MVU"
+    ]
+  },
+  "depth_defaults": {
+    "depth": 0,
+    "role": "system"
+  }
+}
